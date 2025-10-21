@@ -1,0 +1,18 @@
+[project]
+name = "chatkit-backend"
+version = "0.1.0"
+description = "ChatKit FastAPI backend for conversational Agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard]>=0.114.1,<0.116",
+    "httpx>=0.28,<0.29",
+    "uvicorn[standard]>=0.30,<0.31",
+    "openai>=1.40",
+    "openai-chatkit>=0.0.2",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
